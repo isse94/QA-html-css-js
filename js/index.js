@@ -124,3 +124,34 @@ switch (day) {
     console.log(`day not found`);
     break;
 }
+
+console.log(" ");
+
+//task 5
+// q1-2)
+let strictA = true;
+let strictB = 1;
+console.log(strictA == strictB); // true
+console.log(strictA === strictB); // false
+//
+console.log(strictA != strictB); // false
+console.log(strictA !== strictB); // true
+
+// q3)
+
+let age = 19;
+if (age >= 18 && age <= 65) {
+    console.log("This person is eligable");
+}
+else if (age < 18) {
+    console.log("This person is underage");
+}
+else{
+    console.log("This person is not eligable");
+}
+
+// q4) 
+let age2 = 78;
+age2 >= 50 ? console.log("this person is 50 or over") : console.log("this person is Under 50");
+
+
