@@ -28,3 +28,34 @@ console.log(myArray);
 for (let i = 0; i < myArray.length; i++) {
    console.log(myArray[i]);
 }
+
+// task7
+// #ex1)
+
+function sub(a, b) {
+    return b-a;
+}
+console.log(sub(12, 22));
+
+console.log(" ");
+// #ex2) 
+let person = {
+    "name":"felix",
+    "lastName": "Cited",
+    "age": 20,
+    "gender": "male",
+};
+function welcome(name, lastName, age, gender) {
+    return `My name is ${name} ${lastName}, i am ${age} years old and of gender ${gender}`
+}
+console.log(welcome(person.name,person.lastName, person.age, person.gender));
+
+// #ex3) 
+// function powerEx (n1, n2) {
+//     return Math.pow(n1, n2)
+// }
+console.log(" "); 
+
+let powerEx = (n1,n2) => Math.pow(n1, n2);
+
+console.log(powerEx(2,4));
