@@ -59,3 +59,33 @@ console.log(" ");
 let powerEx = (n1,n2) => Math.pow(n1, n2);
 
 console.log(powerEx(2,4));
+
+console.log(" ");
+
+// task8
+// #ex1)
+function ex1() {
+    let x = "foo";
+    console.log(x.length);
+    if (x.length == 3) {
+        console.log("length is 3");
+    }
+    else if (x.length ==2){
+        let y = "length = 2"
+        console.log("length is 2");
+    }
+}
+ex1();
+// console.log(x); // cannot be accessed due to being local scoped
+// console.log(y); // cannot be accessed due to being local scoped
+
+function doSomething() {
+    // console.log(a);Uncaught ReferenceError: Cannot access 'a' before initialization 
+    console.log(foo());   //works fine as within local scope
+    let a = 1;
+    function foo() {
+      return 2;
+    }
+  }
+  doSomething();
+
