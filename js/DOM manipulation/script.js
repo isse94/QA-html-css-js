@@ -9,7 +9,7 @@ import * as DOM from './dom.js'
     window.onload = function(){
      const head = document.createElement('h1');   
     const y = document.createTextNode("This just got added");
-    head.appendChild(y); // add text as last child
+    head.appendChild(y); //  add text as last child
     document.body.append(head) // adds latest head as last body child
 
 
