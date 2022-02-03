@@ -27,7 +27,7 @@ DOM.buttonsJS.map( button => {
                 break;
             case '=':
                 DOM.display.innerText = eval(DOM.display.innerText );  // eval takes our string (our display text) as parameter and executes it as a js code
-                break; // (stop the equal sign from displaying)
+                break; // (break.. to stop the equal sign from displaying)
                 // can add try{} and catch { display error message as text} to show user they've inputed an error of some sort
                 default:
             DOM.display.innerText += e.target.innerText; // display what is clicked in our cal output
